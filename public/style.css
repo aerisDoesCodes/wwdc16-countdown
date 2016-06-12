@@ -36,7 +36,13 @@ a.add-to-cal{
   color: #fff;
 }
 
-.unicorn7-link {color:white;cursor:pointer;}
+.unicorn7-link {
+  color:white;
+  cursor:pointer;
+  max-width: 100%;
+
+
+}
 .unicorn7-link:hover {color:#dedede;cursor:pointer;}
 
 .cursor {
