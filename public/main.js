@@ -1,6 +1,6 @@
 $(document).ready(function () {    
 
-  $('.at-countdown').appleTimer({
+  var timer = $('.at-countdown').appleTimer({
     minute: 55,
     //Change date here!
     hour: 9,
@@ -21,32 +21,26 @@ $(document).ready(function () {    
   nMinutes = parseInt(tMinutes);    
   nSeconds = parseInt(tSeconds);
 
+  console.log(timer)
 
+  setInterval(function(){
 
-  if (nDays == 0) {      
-    //$(".col1").hide();      
+    var tDays = $(".at-days-digit").text();    
+    var tHours = $(".at-hours-digit").text();
+    var tMinutes = $(".at-minutes-digit").text();  
+    var tSeconds = $(".at-seconds-digit").text();
 
-    if (nHours == 0) {        
-      //    $(".col2").hide();     
-      //  $(".col4").show();    
-      if (nMinutes == 0) {          
-        //      $(".col3").hide();          
-        //      $(".col4").show(); 
-        if (nSeconds == 0) {            
-          //  var url = "http://developer.apple.com/wwdc/live";
-          //if(typeof IE_fix != "undefined") // IE8 and lower fix to pass the http referer
-          //{
-            //document.write("redirecting..."); // Don't remove this line or appendChild() will fail because it is called before document.onload to make the redirect as fast as possible. Nobody will see this text, it is only a tech fix.
-            //var referLink = document.createElement("a");
-            //referLink.href = url;
-            //document.body.appendChild(referLink);
-            //referLink.click();
-            //}//
-            //else { window.location.replace(url); } // All other browsers    
-          }        
-        }      
-      }    
+    var nDays = parseInt(tDays);    
+    var nHours = parseInt(tHours);    
+    var nMinutes = parseInt(tMinutes);    
+    var nSeconds = parseInt(tSeconds); 
+
+    if (nDays== 0 && nHours==0 && nMinutes == 0 && nSeconds == 0 ){
+      var win = window.open('http://www.apple.com/apple-events/june-2016/', '_blank');
+      win.focus();
     }
 
+  }, 60000);
 
-  })
+
+});
