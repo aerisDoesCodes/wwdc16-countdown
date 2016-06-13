@@ -1,6 +1,6 @@
 $(document).ready(function () {    
 
-  var timer = $('.at-countdown').appleTimer({
+  $('.at-countdown').appleTimer({
     minute: 55,
     //Change date here!
     hour: 9,
@@ -20,8 +20,6 @@ $(document).ready(function () {    
   nHours = parseInt(tHours);    
   nMinutes = parseInt(tMinutes);    
   nSeconds = parseInt(tSeconds);
-
-  console.log(timer)
 
   setInterval(function(){
 
