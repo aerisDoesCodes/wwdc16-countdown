@@ -2,6 +2,19 @@
   color:#52bc57;
 }
 
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a{
+  color: #96989f;
+  font-size: 19px;
+  text-decoration: none;
+  text-shadow: 0px 1px 1px black;
+}
+
 a.add-to-cal{
   color: #c4c7d0;
   font-size: 19px;
@@ -15,6 +28,9 @@ a.add-to-cal{
   -o-transition: all .2s ease-in;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
+  display: inline-block;
+  margin-bottom: 10px;
+
 }
 
 a.add-to-cal:hover{
