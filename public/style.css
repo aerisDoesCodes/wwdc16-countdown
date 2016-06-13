@@ -2,13 +2,16 @@
   color:#52bc57;
 }
 
-footer{
+#footer{
   position: absolute;
+  right: 0;
   bottom: 0;
-  width: 100%;
+  left: 0;
+
+  text-align: center;
 }
 
-footer a{
+#footer a{
   color: #96989f;
   font-size: 19px;
   text-decoration: none;
@@ -48,8 +51,7 @@ a.add-to-cal:hover{
 .redirect-info{
   color: #96989f;
   font-size: 13px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin: 30px 10px;
 }
 
 .unicorn2{
@@ -80,6 +82,7 @@ a.add-to-cal:hover{
   color:white;
   cursor:pointer;
   max-width: 100%;
+  margin-top: 50px;
 
 
 }
@@ -261,16 +264,27 @@ a.add-to-cal:hover{
 
 .unicorn8{color: #94c66e}
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 body {
+
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+
   background-color: #292c36;
   color: #52bc57;
   /*margin: 2em 22px;*/
   font-family: 'Roboto Mono', monospace;
   font-size: 23px;
   line-height: 1.6;
-
+  height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 
@@ -278,4 +292,37 @@ body {
 .wwdc__marketingfoobar {
   /*	margin-bottom: 80px;*/
   color: map-get($colors, 'unicorn8');
+}
+
+#container {
+   min-height:100%;
+   width: 100%;
+   position:relative;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 414px) {
+    .at-countdown{
+      font-size: 25px !important;
+    }
+
+    .comment{
+      font-size: 20px !important;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .redirect-info{
+      font-size: 14px;
+      margin: 30px 10px;
+    }
+
+    .unicorn7-link {
+      margin-top: 0px;
+    }
+}
+
+
+.at-countdown{
+  font-size: 32px;
 }
