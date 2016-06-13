@@ -12,6 +12,11 @@ a.add-to-cal{
   text-decoration: none;
 }
 
+.join-slack{
+  color: #c4c7d0;
+  font-size: 14px;
+}
+
 .unicorn2{
   color:#00aba4;
 }
@@ -232,6 +237,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 .wwdc__marketingfoobar {
   /*	margin-bottom: 80px;*/
