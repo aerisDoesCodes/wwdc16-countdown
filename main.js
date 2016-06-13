@@ -10,18 +10,9 @@ $(document).ready(function () {    
     pluralLabels: true
   });
 
-  var tDays = $(".at-days-digit").text();    
-  var tHours = $(".at-hours-digit").text();    
-  var tMinutes = $(".at-minutes-digit").text();    
-  var tSeconds = $(".at-seconds-digit").text();
 
 
-  nDays = parseInt(tDays);    
-  nHours = parseInt(tHours);    
-  nMinutes = parseInt(tMinutes);    
-  nSeconds = parseInt(tSeconds);
-
-  setInterval(function(){
+  var redirectListener = setInterval(function(){
 
     var tDays = $(".at-days-digit").text();    
     var tHours = $(".at-hours-digit").text();
@@ -34,8 +25,10 @@ $(document).ready(function () {    
     var nSeconds = parseInt(tSeconds); 
 
     if (nDays== 0 && nHours==0 && nMinutes == 0 && nSeconds == 0 ){
+      clearInterval(redirectListener);
       var win = window.open('http://www.apple.com/apple-events/june-2016/', '_blank');
       win.focus();
+
     }
 
   }, 1000);
