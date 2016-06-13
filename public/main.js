@@ -10,16 +10,7 @@ $(document).ready(function () {    
     pluralLabels: true
   });
 
-  var tDays = $(".at-days-digit").text();    
-  var tHours = $(".at-hours-digit").text();    
-  var tMinutes = $(".at-minutes-digit").text();    
-  var tSeconds = $(".at-seconds-digit").text();
 
-
-  nDays = parseInt(tDays);    
-  nHours = parseInt(tHours);    
-  nMinutes = parseInt(tMinutes);    
-  nSeconds = parseInt(tSeconds);
 
   var redirectListener = setInterval(function(){
 
