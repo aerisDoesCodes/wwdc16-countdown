@@ -21,6 +21,7 @@
   font-size: 14px;
   text-decoration: none;
   text-shadow: 0px 1px 1px black;
+  cursor: pointer;
 }
 
 a.add-to-cal{
@@ -38,7 +39,7 @@ a.add-to-cal{
   transition: all .2s ease-in;
   display: inline-block;
   margin-bottom: 10px;
-
+  cursor: pointer;
 }
 
 a.add-to-cal:hover{
